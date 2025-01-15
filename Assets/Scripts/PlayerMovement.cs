@@ -122,7 +122,8 @@ public class Playermovement : MonoBehaviour
 
         //Camera Effects
         if(isGrounded && !isGroundedPrevious){
-            animator.SetTrigger("JumpEnd");
+            Debug.Log("Landed" + Time.time);
+            animator.SetBool("Jump", false);
             playerCam.CameraShake();
         }
         if(isSliding && !isSlidingPrevious){
@@ -242,7 +243,7 @@ public class Playermovement : MonoBehaviour
     }
 
     void Jump(){
-        animator.SetTrigger("Jump");
+        animator.SetBool("Jump", true);
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }

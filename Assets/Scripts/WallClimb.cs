@@ -94,9 +94,15 @@ public class WallClimb : MonoBehaviour
 
     void Climb()
     {
+        playerAnimator.SetTrigger("LedgeClimb");
         rb.isKinematic = true;
         climbAnim = true;
         animator.SetBool("canClimb", climbAnim);
         //Debug.Log(climbAnim);
+    }
+
+    void ClimbEnd()
+    {
+        playerAnimator.SetTrigger("LedgeClimbEnd");
     }
 }

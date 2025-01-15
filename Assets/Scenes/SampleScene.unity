@@ -5593,11 +5593,11 @@ PrefabInstance:
     - target: {fileID: 2508812124418183303, guid: 8ae748d7fd5c34edb873fa362afdd817, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 62783040d8a1f4174ae056aca9d33904, type: 2}
+      objectReference: {fileID: 2100000, guid: 719e8100678394005aefe2c96c22d473, type: 2}
     - target: {fileID: 2508812124418183303, guid: 8ae748d7fd5c34edb873fa362afdd817, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 62783040d8a1f4174ae056aca9d33904, type: 2}
+      objectReference: {fileID: 2100000, guid: 719e8100678394005aefe2c96c22d473, type: 2}
     - target: {fileID: 3566207899841815972, guid: 8ae748d7fd5c34edb873fa362afdd817, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -6560,6 +6560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 684766471693284177, guid: 603d65c9c949d874485d340787d4b7ec, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 2015107518}
     - target: {fileID: 698398613865959434, guid: 603d65c9c949d874485d340787d4b7ec, type: 3}
       propertyPath: m_Materials.Array.data[3]
       value: 
@@ -7518,7 +7522,7 @@ MonoBehaviour:
   m_RenderShadows: 1
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
+  m_CameraType: 1
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
@@ -7707,8 +7711,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 62783040d8a1f4174ae056aca9d33904, type: 2}
-  - {fileID: 2100000, guid: 62783040d8a1f4174ae056aca9d33904, type: 2}
+  - {fileID: 2100000, guid: 01811a1691e2044768c53dbf158fa5d6, type: 2}
+  - {fileID: 2100000, guid: 01811a1691e2044768c53dbf158fa5d6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9644,6 +9648,10 @@ PrefabInstance:
     - target: {fileID: 5754130898300519930, guid: eede92013ed0a004c99d85f4980a2b23, type: 3}
       propertyPath: m_Name
       value: UI-Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254828882969136941, guid: eede92013ed0a004c99d85f4980a2b23, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8044103179175860756, guid: eede92013ed0a004c99d85f4980a2b23, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -15342,6 +15350,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4af44a11c0db475469ebf159f127d441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2015107518 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5022676212899885989, guid: 603d65c9c949d874485d340787d4b7ec, type: 3}
+  m_PrefabInstance: {fileID: 944266936}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2020588173
 PrefabInstance:
   m_ObjectHideFlags: 0

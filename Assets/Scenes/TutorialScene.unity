@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 684766471693284177, guid: 603d65c9c949d874485d340787d4b7ec, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 512596171}
     - target: {fileID: 756962492892268831, guid: 603d65c9c949d874485d340787d4b7ec, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -1533,7 +1537,7 @@ MonoBehaviour:
   m_RenderShadows: 1
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
+  m_CameraType: 1
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
